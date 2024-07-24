@@ -1,0 +1,33 @@
+{
+  "conversations": [
+    {
+      "id": 1,
+      "question": "What's the price of this ticket?",
+      "options": ["100 Rs", "150 Rs", "200 Rs"]
+    },
+    {
+      "id": 2,
+      "question": "Where is this location?",
+      "options": ["I don't know", "Between Location A and Location B"]
+    }
+  ],
+  "bargaining": {
+    "min_price": 50,
+    "max_price": 200,
+    "attempts": 5,
+    "responses": [
+      {
+        "range": "50-100",
+        "response": "That's too low."
+      },
+      {
+        "range": "101-150",
+        "response": "I can consider that."
+      },
+      {
+        "range": "151-200",
+        "response": "Deal."
+      }
+    ]
+  }
+}
